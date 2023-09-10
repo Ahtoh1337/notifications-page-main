@@ -1,0 +1,16 @@
+@import 'pages/variables.scss';
+
+@font-face {
+  font-family: PlusJakartaSans;
+  src: url('/fonts/PlusJakartaSans-VariableFont_wght.ttf');
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  margin: 0;
+  background-color: $color-very-light-grayish-blue;
+}

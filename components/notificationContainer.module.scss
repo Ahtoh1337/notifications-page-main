@@ -1,0 +1,161 @@
+@import 'pages/variables.scss';
+
+$border-radius: 0.7rem;
+$general-padding: 1.8rem;
+$max-width: 60rem;
+
+.container {
+  padding: $general-padding;
+  font-family: PlusJakartaSans, sans-serif;
+  color: $color-dark-grayish-blue;
+  font-size: 0.9em;
+  background-color: $color-white;
+
+  width: calc(100% - ($general-padding * 2));
+  max-width: $max-width;
+  margin: auto;
+  min-height: calc(100vh - ($general-padding * 2));
+}
+
+@media (min-width: 660px) {
+  .container {
+    margin-top: calc($general-padding * 2);
+    min-height: calc(100vh - ($general-padding * 4));
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+
+    box-shadow: $color-light-grayish-blue-2 0 1rem 1.5rem 0.5rem;
+  }
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  h1 {
+    margin: 0.4em 0;
+    font-size: 2.1rem;
+    font-weight: bold;
+    color: $color-very-dark-blue;
+  }
+
+  .readButton {
+    border: none;
+    background: none;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    font-weight: bold;
+
+    &:hover {
+      color: $color-blue;
+    }
+  }
+}
+
+.counter {
+  color: $color-white;
+  background-color: $color-blue;
+  width: 3ch;
+  text-align: center;
+  padding: 0.2ch 0;
+  font-size: 0.8em;
+  border-radius: $border-radius;
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+
+.list {
+  padding: 0;
+}
+
+.notifPanel {
+  border-radius: $border-radius;
+  margin: 1em 0;
+
+  
+
+  &.unread {
+    background-color: $color-very-light-grayish-blue;
+  }
+}
+
+.notifBox {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.avatarImg, .commentImg {
+  margin: $general-padding;
+  width: 3em;
+  height: 3em;
+}
+
+.avatarImg {
+  margin-right: 0;
+}
+
+.commentImg {
+  margin-left: 0;
+
+  &:hover, &:active {
+    outline: 0.3rem solid $color-light-grayish-blue-2;
+    border-radius: $border-radius;
+  }
+}
+
+.linkWrapper, .userLink, .postLink, .groupLink {
+  color: inherit;
+  text-decoration: none;
+}
+
+.userLink, .postLink, .groupLink {
+  font-weight: bold;
+
+  &:hover, &:active {
+    color: $color-blue;
+  }
+}
+
+.userLink {
+  color: $color-very-dark-blue;
+}
+
+.groupLink {
+  color: $color-blue;
+}
+
+.notifCircle {
+  display: inline-block;
+  vertical-align: 0.07ch;
+  width: 0.7ch;
+  height: 0.7ch;
+  background-color: $color-red;
+  border-radius: 50%;
+}
+
+.notifContent {
+  margin: $general-padding;
+  flex: 1;
+}
+
+.timeSpan {
+  margin-top: 0.2em;
+  color: $color-grayish-blue;
+}
+
+.privateMessage {
+  margin-top: 1rem;
+  border: 0.1rem solid $color-light-grayish-blue-2;
+  padding: $general-padding;
+  border-radius: $border-radius;
+  border-top-left-radius: 0;
+
+  &:hover, &:active {
+    background-color: $color-light-grayish-blue-1;
+    border-color: $color-light-grayish-blue-1;
+  }
+}
+
