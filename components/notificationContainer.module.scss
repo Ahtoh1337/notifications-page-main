@@ -2,14 +2,14 @@
 
 $border-radius: 0.7rem;
 $general-padding: 1.8rem;
-$max-width: 60rem;
+$max-width: 65rem;
 
 .container {
   padding: $general-padding;
   font-family: PlusJakartaSans, sans-serif;
   color: $color-dark-grayish-blue;
-  font-size: 0.9em;
   background-color: $color-white;
+  font-size: 0.9em;
 
   width: calc(100% - ($general-padding * 2));
   max-width: $max-width;
@@ -17,12 +17,13 @@ $max-width: 60rem;
   min-height: calc(100vh - ($general-padding * 2));
 }
 
-@media (min-width: 660px) {
+@media (min-width: 710px) {
   .container {
     margin-top: calc($general-padding * 2);
     min-height: calc(100vh - ($general-padding * 4));
     border-top-left-radius: 1.5rem;
     border-top-right-radius: 1.5rem;
+    font-size: 1em;
 
     box-shadow: $color-light-grayish-blue-2 0 1rem 1.5rem 0.5rem;
   }
